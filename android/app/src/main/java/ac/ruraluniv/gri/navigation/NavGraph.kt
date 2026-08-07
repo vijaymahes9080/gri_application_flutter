@@ -1,5 +1,6 @@
 package ac.ruraluniv.gri.navigation
 
+import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -11,6 +12,22 @@ import ac.ruraluniv.gri.ui.register.RegisterScreen
 import ac.ruraluniv.gri.ui.home.HomeScreen
 import ac.ruraluniv.gri.ui.menu.MenuScreen
 
+fun safeNavigate(navController: NavHostController, route: String) {
+    try {
+        navController.navigate(route)
+    } catch (e: Exception) {
+        Log.e("NavGraph", "Safe navigation caught error for route $route: ${e.message}")
+        try {
+            val fallback = route.trimStart('/')
+            if (fallback != route) {
+                navController.navigate(fallback)
+            }
+        } catch (ex: Exception) {
+            Log.e("NavGraph", "Fallback navigation error: ${ex.message}")
+        }
+    }
+}
+
 @Composable
 fun SetupNavGraph(navController: NavHostController) {
     NavHost(
@@ -20,14 +37,10 @@ fun SetupNavGraph(navController: NavHostController) {
         composable(route = Screen.Splash.route) {
             SplashScreen(
                 onNavigateToLogin = {
-                    navController.navigate(Screen.Home.route) {
-                        popUpTo(Screen.Splash.route) { inclusive = true }
-                    }
+                    safeNavigate(navController, Screen.Home.route)
                 },
                 onNavigateToHome = {
-                    navController.navigate(Screen.Home.route) {
-                        popUpTo(Screen.Splash.route) { inclusive = true }
-                    }
+                    safeNavigate(navController, Screen.Home.route)
                 }
             )
         }
@@ -35,17 +48,13 @@ fun SetupNavGraph(navController: NavHostController) {
         composable(route = Screen.Login.route) {
             LoginScreen(
                 onLoginSuccess = {
-                    navController.navigate(Screen.Home.route) {
-                        popUpTo(Screen.Login.route) { inclusive = true }
-                    }
+                    safeNavigate(navController, Screen.Home.route)
                 },
                 onNavigateToRegister = {
-                    navController.navigate(Screen.Register.route)
+                    safeNavigate(navController, Screen.Register.route)
                 },
                 onGuestLogin = {
-                    navController.navigate(Screen.Home.route) {
-                        popUpTo(Screen.Login.route) { inclusive = true }
-                    }
+                    safeNavigate(navController, Screen.Home.route)
                 }
             )
         }
@@ -53,9 +62,7 @@ fun SetupNavGraph(navController: NavHostController) {
         composable(route = Screen.Register.route) {
             RegisterScreen(
                 onRegisterSuccess = {
-                    navController.navigate(Screen.Home.route) {
-                        popUpTo(Screen.Register.route) { inclusive = true }
-                    }
+                    safeNavigate(navController, Screen.Home.route)
                 },
                 onNavigateToLogin = {
                     navController.popBackStack()
@@ -66,24 +73,10 @@ fun SetupNavGraph(navController: NavHostController) {
         composable(route = Screen.Home.route) {
             HomeScreen(
                 onOpenMenu = {
-                    navController.navigate(Screen.Menu.route)
+                    safeNavigate(navController, Screen.Menu.route)
                 },
                 onQuickActionClick = { route ->
-                    val targetRoute = when (route) {
-                        "/admissions", "admissions" -> Screen.Admissions.route
-                        "/schools", "schools" -> Screen.Schools.route
-                        "/departments", "departments" -> Screen.Departments.route
-                        "/portal", "portal" -> Screen.Portal.route
-                        "/downloads", "downloads" -> Screen.Downloads.route
-                        "/facilities", "facilities" -> Screen.Facilities.route
-                        "/enews", "enews" -> Screen.ENews.route
-                        "/videos", "videos" -> Screen.Videos.route
-                        "/about", "about" -> Screen.About.route
-                        "/governance", "governance" -> Screen.Governance.route
-                        "/contacts", "contacts" -> Screen.Contacts.route
-                        else -> Screen.Home.route
-                    }
-                    navController.navigate(targetRoute)
+                    safeNavigate(navController, route)
                 }
             )
         }
@@ -94,26 +87,37 @@ fun SetupNavGraph(navController: NavHostController) {
                     navController.popBackStack()
                 },
                 onLogout = {
-                    navController.navigate(Screen.Login.route) {
-                        popUpTo(0) { inclusive = true }
-                    }
+                    safeNavigate(navController, Screen.Login.route)
                 },
                 onNavigate = { route ->
-                    navController.navigate(route)
+                    safeNavigate(navController, route)
                 }
             )
         }
 
-        composable(route = Screen.About.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
-        composable(route = Screen.Governance.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
-        composable(route = Screen.Schools.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
-        composable(route = Screen.Departments.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
-        composable(route = Screen.Admissions.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
-        composable(route = Screen.Facilities.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
-        composable(route = Screen.ENews.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
-        composable(route = Screen.Videos.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
-        composable(route = Screen.Downloads.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
-        composable(route = Screen.Portal.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
-        composable(route = Screen.Contacts.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        // Register both prefixed and non-prefixed routes for complete safety
+        val routesList = listOf(
+            "about", "/about",
+            "governance", "/governance",
+            "schools", "/schools",
+            "departments", "/departments",
+            "admissions", "/admissions",
+            "facilities", "/facilities",
+            "enews", "/enews",
+            "videos", "/videos",
+            "downloads", "/downloads",
+            "portal", "/portal",
+            "contacts", "/contacts",
+            "profile", "/profile"
+        )
+
+        for (r in routesList) {
+            composable(route = r) {
+                HomeScreen(
+                    onOpenMenu = { safeNavigate(navController, Screen.Menu.route) },
+                    onQuickActionClick = { safeNavigate(navController, it) }
+                )
+            }
+        }
     }
 }
