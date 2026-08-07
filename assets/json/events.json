@@ -1,0 +1,29 @@
+[
+  {
+    "id": "e1",
+    "title": "Ph.D. July 2026 Entrance Examination & Interview",
+    "date": "2026-08-15",
+    "venue": "GRI Examination Hall & Virtual Mode",
+    "time": "10:00 AM - 04:00 PM",
+    "organizer": "Research & Development Cell (RDC)",
+    "description": "Qualifying entrance exam for research admission across Sciences, Humanities, Agriculture, and Management."
+  },
+  {
+    "id": "e2",
+    "title": "Orientation Program for First Year Undergraduates (2026-27)",
+    "date": "2026-08-20",
+    "venue": "Dr. G. Ramachandran Auditorium",
+    "time": "09:30 AM",
+    "organizer": "Office of the Dean, Academic Affairs",
+    "description": "Welcoming incoming CUET and Non-CUET undergraduate students to the campus and hostel facilities."
+  },
+  {
+    "id": "e3",
+    "title": "National Workshop on Seaweed Cultivation & Processing",
+    "date": "2026-09-05",
+    "venue": "UBA GRI Seaweed Startup Facility",
+    "time": "10:00 AM",
+    "organizer": "Department of Biology & UBA Cell",
+    "description": "Practical training for rural entrepreneurs on seaweed bio-refinery and medicine extraction."
+  }
+]

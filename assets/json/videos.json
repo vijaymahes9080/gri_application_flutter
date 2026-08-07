@@ -1,0 +1,29 @@
+[
+  {
+    "id": "v1",
+    "title": "38th Convocation Ceremony Highlights",
+    "duration": "14:20",
+    "category": "Events",
+    "thumbnail_path": "assets/videos/convocation_highlights_preview.jpg",
+    "video_url": "https://www.youtube.com/watch?v=GRI_38th_Convocation",
+    "description": "Highlights of the 38th Convocation Ceremony presided by Chancellor Dr. KM. Annamalai and VC Dr. N. Panchanatham with Honoris Causa presentation to Sri. VVS Laxman."
+  },
+  {
+    "id": "v2",
+    "title": "Gandhigram Rural Institute Campus Tour & Legacy",
+    "duration": "08:45",
+    "category": "Campus Life",
+    "thumbnail_path": "assets/videos/campus_tour_preview.jpg",
+    "video_url": "https://www.youtube.com/watch?v=GRI_Campus_Tour",
+    "description": "Explore the lush green 300+ acre campus of GRI DTBU, featuring Gandhian constructive program museum, libraries, central labs, and green energy initiatives."
+  },
+  {
+    "id": "v3",
+    "title": "National Workshop on Seaweed Bio-Refinery & Eco-Entrepreneurship",
+    "duration": "22:15",
+    "category": "Research",
+    "thumbnail_path": "assets/images/seaweed_workshop.jpg",
+    "video_url": "https://www.youtube.com/watch?v=GRI_Seaweed_Colloquium",
+    "description": "Organized by Department of Biology and UBA Cell showcasing sustainable marine enterprise models."
+  }
+]

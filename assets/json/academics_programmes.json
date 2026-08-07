@@ -1,0 +1,145 @@
+{
+  "curriculum_system": {
+    "name": "Choice Based Credit System (CBCS) & NEP 2020 Framework",
+    "description": "GRI offers flexible multidisciplinary courses with modular credit structures, continuous internal assessment (40%), and end-semester examinations (60%). Integrated with National Credit Framework (NCrF)."
+  },
+  "schools": [
+    {
+      "id": "s1",
+      "name": "School of Agriculture and Animal Sciences",
+      "code": "SAAS",
+      "dean": "Dr. S. Ramesh",
+      "departments": [
+        "Department of Agriculture",
+        "Department of Animal Husbandry",
+        "Department of Agricultural Extension"
+      ],
+      "programmes_offered": [
+        {"degree": "B.Sc. (Hons.) Agriculture", "duration": "4 Years", "type": "UG"},
+        {"degree": "M.Sc. Agronomy", "duration": "2 Years", "type": "PG"},
+        {"degree": "Ph.D. Agriculture", "duration": "3-5 Years", "type": "Research"}
+      ]
+    },
+    {
+      "id": "s2",
+      "name": "School of Sciences",
+      "code": "SOS",
+      "dean": "Dr. P. Balasubramaniam",
+      "departments": [
+        "Department of Computer Science & Applications",
+        "Department of Mathematics",
+        "Department of Chemistry",
+        "Department of Physics",
+        "Department of Biology",
+        "Department of Nanoscience"
+      ],
+      "programmes_offered": [
+        {"degree": "B.Sc. Mathematics / Physics / Chemistry", "duration": "3/4 Years", "type": "UG"},
+        {"degree": "MCA (Master of Computer Applications)", "duration": "2 Years", "type": "PG"},
+        {"degree": "M.Sc. Computer Science / Data Science", "duration": "2 Years", "type": "PG"},
+        {"degree": "M.Sc. Chemistry / Mathematics / Biology", "duration": "2 Years", "type": "PG"},
+        {"degree": "Ph.D. Computer Science / Math / Chemistry / Biology", "duration": "3-5 Years", "type": "Research"}
+      ]
+    },
+    {
+      "id": "s3",
+      "name": "School of Tamil, Indian Languages and Fine Arts",
+      "code": "STILFA",
+      "dean": "Dr. K. Murugesan",
+      "departments": [
+        "Department of Tamil",
+        "Department of Fine Arts & Music"
+      ],
+      "programmes_offered": [
+        {"degree": "B.A. Tamil", "duration": "3 Years", "type": "UG"},
+        {"degree": "M.A. Tamil & Comparative Literature", "duration": "2 Years", "type": "PG"},
+        {"degree": "Ph.D. Tamil", "duration": "3-5 Years", "type": "Research"}
+      ]
+    },
+    {
+      "id": "s4",
+      "name": "School of Social Sciences",
+      "code": "SSS",
+      "dean": "Dr. M. Sundaramari",
+      "departments": [
+        "Department of Gandhian Thought and Peace Science",
+        "Department of Rural Sociology & Philosophy",
+        "Department of Political Science & Development Administration",
+        "Department of Sociology"
+      ],
+      "programmes_offered": [
+        {"degree": "B.A. Gandhian Social Work", "duration": "3 Years", "type": "UG"},
+        {"degree": "M.A. Peace Science & Conflict Resolution", "duration": "2 Years", "type": "PG"},
+        {"degree": "Ph.D. Gandhian Thought & Peace Science", "duration": "3-5 Years", "type": "Research"}
+      ]
+    },
+    {
+      "id": "s5",
+      "name": "School of Health Sciences and Rural Development",
+      "code": "SHSRD",
+      "dean": "Dr. R. Seerangarajan",
+      "departments": [
+        "Department of Rural Health and Sanitation",
+        "Department of Applied Nutrition",
+        "Department of Community Health"
+      ],
+      "programmes_offered": [
+        {"degree": "P.G. Diploma in Sanitary Inspector's Course", "duration": "1 Year", "type": "Diploma"},
+        {"degree": "M.Sc. Public Health & Applied Nutrition", "duration": "2 Years", "type": "PG"}
+      ]
+    },
+    {
+      "id": "s6",
+      "name": "School of Management Studies",
+      "code": "SMS",
+      "dean": "Dr. M. Soundarapandian",
+      "departments": [
+        "Department of Rural Industries and Management",
+        "Department of Cooperation",
+        "Department of Business Administration"
+      ],
+      "programmes_offered": [
+        {"degree": "BBA (Bachelor of Business Administration)", "duration": "3 Years", "type": "UG"},
+        {"degree": "MBA (Small Business & Rural Entrepreneurship)", "duration": "2 Years", "type": "PG"},
+        {"degree": "Ph.D. Rural Management & Cooperatives", "duration": "3-5 Years", "type": "Research"}
+      ]
+    },
+    {
+      "id": "s7",
+      "name": "School of Education & Lifelong Learning",
+      "code": "SELL",
+      "dean": "Dr. G. Pankajam",
+      "departments": [
+        "Department of Education",
+        "Department of Extension Education"
+      ],
+      "programmes_offered": [
+        {"degree": "B.Ed. (Bachelor of Education)", "duration": "2 Years", "type": "UG"},
+        {"degree": "ITEP (Integrated Teacher Education Programme)", "duration": "4 Years", "type": "UG"},
+        {"degree": "M.Ed.", "duration": "2 Years", "type": "PG"}
+      ]
+    }
+  ],
+  "specialized_research_centres": [
+    {
+      "name": "Krishi Vigyan Kendra (KVK GRI)",
+      "focus": "Agricultural extension, frontline technology demonstration, and farmer training."
+    },
+    {
+      "name": "Centre for Women's Studies",
+      "focus": "Gender equality research, rural women entrepreneurship, and legal awareness."
+    },
+    {
+      "name": "Centre for Geoinformatics",
+      "focus": "GIS mapping, satellite remote sensing, land-use planning, and watershed management."
+    },
+    {
+      "name": "Centre for Social Exclusion and Inclusive Policy (CSSEIP)",
+      "focus": "Socio-economic research on marginalized communities and affirmative policies."
+    },
+    {
+      "name": "Rural Energy Centre",
+      "focus": "Solar photovoltaic energy, biogas technology, and biomass gasification in rural Tamil Nadu."
+    }
+  ]
+}

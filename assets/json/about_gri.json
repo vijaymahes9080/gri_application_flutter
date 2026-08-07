@@ -1,0 +1,51 @@
+{
+  "university_info": {
+    "name": "The Gandhigram Rural Institute (Deemed to be University)",
+    "tamil_name": "காந்தி கிராம கிராமியப் பல்கலைக்கழகம்",
+    "accreditation": "NAAC 'A' Grade (3rd Cycle)",
+    "established_year": 1956,
+    "founder_leaders": [
+      "Dr. G. Ramachandran",
+      "Dr. T. S. Soundram"
+    ],
+    "location": "Gandhigram, Dindigul District, Tamil Nadu, India - 624 302",
+    "campus_area": "300+ Acres",
+    "motto": "He who works for others is saved. He who works for himself is lost.",
+    "tagline": "Promoting Rural Higher Education & Gandhian Constructive Programme"
+  },
+  "vision": "To provide quality higher education to rural youth, foster Gandhian values of truth, non-violence, and self-reliance, and promote rural development through teaching, research, and extension.",
+  "mission": [
+    "To provide higher education relevant to the needs of rural communities.",
+    "To develop innovative academic programmes blending theory, research, and field-based extension.",
+    "To promote Gandhian constructive work and village industrialization.",
+    "To empower women, marginalized sections, and rural youth through skill training and entrepreneurship."
+  ],
+  "genesis": {
+    "history": "Founded in 1956 by Dr. G. Ramachandran and Dr. T.S. Soundram, disciples of Mahatma Gandhi, GRI was established to realize Gandhiji's vision of Nai Talim (Basic Education). In 1976, it was declared a Deemed to be University by the Government of India on the advice of the UGC.",
+    "key_milestones": [
+      {"year": "1956", "event": "Inaugurated as Gandhigram Rural Institute by Dr. Rajendra Prasad, President of India."},
+      {"year": "1976", "event": "Conferred Deemed to be University status under Section 3 of UGC Act, 1956."},
+      {"year": "2002", "event": "Accredited by NAAC with Five Star Status."},
+      {"year": "2010", "event": "Re-accredited with 'A' Grade by NAAC (2nd Cycle)."},
+      {"year": "2016", "event": "Re-accredited with 'A' Grade by NAAC (3rd Cycle)."},
+      {"year": "2024-2026", "event": "Implementation of NEP 2020 four-year UG Honours programmes, Samarth ERP portal, and UBA Seaweed Bio-refinery facility."}
+    ]
+  },
+  "logo_significance": {
+    "description": "The GRI logo incorporates the Spinning Wheel (Charkha), representing self-reliance and rural industry; a lamp illuminating knowledge; and green foliage symbolizing agricultural prosperity and ecological balance."
+  },
+  "former_leadership": {
+    "chancellors": [
+      {"name": "Dr. S. Radhakrishnan", "tenure": "1956 - 1962"},
+      {"name": "Dr. Zakir Husain", "tenure": "1962 - 1967"},
+      {"name": "Sri. V. V. Giri", "tenure": "1967 - 1969"},
+      {"name": "Dr. KM. Annamalai", "tenure": "Present"}
+    ],
+    "vice_chancellors": [
+      {"name": "Dr. G. Ramachandran", "tenure": "1976 - 1979"},
+      {"name": "Dr. M. Aram", "tenure": "1980 - 1986"},
+      {"name": "Dr. Devendra Kumar", "tenure": "1986 - 1991"},
+      {"name": "Dr. N. Panchanatham", "tenure": "Present"}
+    ]
+  }
+}

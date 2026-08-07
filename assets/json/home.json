@@ -1,0 +1,97 @@
+{
+  "university_info": {
+    "name": "The Gandhigram Rural Institute",
+    "status": "Deemed to be University",
+    "accreditation": "NAAC A Grade (3rd Cycle)",
+    "location": "Gandhigram, Dindigul District, Tamil Nadu - 624302",
+    "established": 1956,
+    "motto": "He who works for others is saved. He who works for himself is lost."
+  },
+  "marquee_announcements": [
+    "CUET UG/PG Admissions 2026-2027 Portal is live now",
+    "Ph.D. Application July 2026 session is open — Apply Online",
+    "One Day Expert Colloquium on CRISPR Revolution & Seaweed Startup Facility organized by Dept. of Biology",
+    "TRIVISTA '26 national symposium hosted by Dept of Computer Science & CAIDS",
+    "MoU signed between Algorian Software Solutions and Dept of Rural Industries & Management"
+  ],
+  "hero_carousel": [
+    {
+      "id": "c1",
+      "title": "38th Convocation Ceremony at GRI - DTBU",
+      "subtitle": "Chancellor Dr. KM. Annamalai and VC Dr. N. Panchanatham presenting Degrees & Honoris Causa to Sri. VVS Laxman",
+      "image_url": "https://ruraluniv.ac.in/images/tdi_gallery/20251006_1.jpg",
+      "tag": "Convocation"
+    },
+    {
+      "id": "c2",
+      "title": "Expert Colloquium on CRISPR & Eco-Friendly Entrepreneurship",
+      "subtitle": "Department of Biology organized national colloquium with Vice-Chancellor Dr. N. Panchanatham",
+      "image_url": "https://ruraluniv.ac.in/images/tdi_gallery/20260731_1.jpg",
+      "tag": "Research & Innovation"
+    },
+    {
+      "id": "c3",
+      "title": "TRIVISTA '26 National Tech Symposium",
+      "subtitle": "Organized by Dept of Computer Science & Applications and CAIDS",
+      "image_url": "https://ruraluniv.ac.in/images/tdi_gallery/20260729_1.jpg",
+      "tag": "Academic Event"
+    }
+  ],
+  "quick_actions": [
+    {
+      "id": "qa1",
+      "title": "Admissions 2026",
+      "subtitle": "Apply for UG, PG & Diploma",
+      "icon": "school",
+      "color": "0xFF518214",
+      "route": "/admissions"
+    },
+    {
+      "id": "qa2",
+      "title": "Ph.D. July 2026",
+      "subtitle": "Research Application Portal",
+      "icon": "psychology",
+      "color": "0xFFF26B0F",
+      "route": "/admissions"
+    },
+    {
+      "id": "qa3",
+      "title": "Samarth@GRI",
+      "subtitle": "University Management System",
+      "icon": "dashboard",
+      "color": "0xFF911C03",
+      "route": "/portal"
+    },
+    {
+      "id": "qa4",
+      "title": "e-SANAD Portal",
+      "subtitle": "Document Verification System",
+      "icon": "verified_user",
+      "color": "0xFF003399",
+      "route": "/portal"
+    },
+    {
+      "id": "qa5",
+      "title": "Downloads",
+      "subtitle": "Forms, Calendars & Circulars",
+      "icon": "download",
+      "color": "0xFF3F4B56",
+      "route": "/downloads"
+    },
+    {
+      "id": "qa6",
+      "title": "Student Portal",
+      "subtitle": "Attendance & Exam Marks",
+      "icon": "person",
+      "color": "0xFF518214",
+      "route": "/portal"
+    }
+  ],
+  "statistics": [
+    {"label": "Academic Schools", "value": "7+"},
+    {"label": "Departments", "value": "23+"},
+    {"label": "Students Enrolled", "value": "3500+"},
+    {"label": "Research Scholars", "value": "450+"},
+    {"label": "Extension Programs", "value": "50+"}
+  ]
+}

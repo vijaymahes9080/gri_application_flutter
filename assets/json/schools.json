@@ -1,0 +1,58 @@
+[
+  {
+    "id": "s1",
+    "name": "School of Agriculture and Animal Sciences",
+    "code": "SAAS",
+    "dean": "Dr. S. Ramesh",
+    "description": "Offering B.Sc. (Hons.) Agriculture, Agricultural Extension, and Animal Husbandry with hands-on farm experience.",
+    "departments_count": 3
+  },
+  {
+    "id": "s2",
+    "name": "School of Sciences",
+    "code": "SOS",
+    "dean": "Dr. P. Balasubramaniam",
+    "description": "Comprising Mathematics, Physics, Chemistry, Biology, Nanoscience, and Computer Science & Applications.",
+    "departments_count": 6
+  },
+  {
+    "id": "s3",
+    "name": "School of Tamil, Indian Languages and Fine Arts",
+    "code": "STILFA",
+    "dean": "Dr. K. Murugesan",
+    "description": "Dedicated to Tamil literature, folk arts, music, Gandhian aesthetics, and cultural studies.",
+    "departments_count": 2
+  },
+  {
+    "id": "s4",
+    "name": "School of Social Sciences",
+    "code": "SSS",
+    "dean": "Dr. M. Sundaramari",
+    "description": "Focusing on Gandhian Thought & Peace Science, Rural Sociology, Political Science, and Sociology.",
+    "departments_count": 4
+  },
+  {
+    "id": "s5",
+    "name": "School of Health Sciences and Rural Development",
+    "code": "SHSRD",
+    "dean": "Dr. R. Seerangarajan",
+    "description": "Providing training in Rural Health, Sanitation, Applied Nutrition, and Community Health Care.",
+    "departments_count": 3
+  },
+  {
+    "id": "s6",
+    "name": "School of Management Studies",
+    "code": "SMS",
+    "dean": "Dr. M. Soundarapandian",
+    "description": "Offers MBA, BBA, and specialized programs in Rural Industries, Entrepreneurship & Cooperatives.",
+    "departments_count": 3
+  },
+  {
+    "id": "s7",
+    "name": "School of Education & Lifelong Learning",
+    "code": "SELL",
+    "dean": "Dr. G. Pankajam",
+    "description": "Teacher Education (B.Ed, M.Ed, ITEP), Lifelong Learning, and Extension Education.",
+    "departments_count": 2
+  }
+]

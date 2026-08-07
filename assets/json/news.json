@@ -1,0 +1,42 @@
+[
+  {
+    "id": "n1",
+    "title": "One Day Expert Colloquium on CRISPR Revolution & Seaweed for Future Foods",
+    "date": "2026-07-30",
+    "category": "Research",
+    "summary": "Organized by the Department of Biology with Presidential Address by Vice-Chancellor Dr. N. Panchanatham and Keynote by Dr. P. Anantharaman.",
+    "content": "The Department of Biology hosted a landmark colloquium focused on CRISPR genome editing, eco-friendly entrepreneurship, and marine seaweed applications in modern medicine.",
+    "image_url": "https://ruraluniv.ac.in/images/tdi_gallery/20260731_1.jpg",
+    "is_important": true
+  },
+  {
+    "id": "n2",
+    "title": "TRIVISTA '26 National Tech Symposium Launched",
+    "date": "2026-07-27",
+    "category": "Academic",
+    "summary": "Jointly organized by Department of Computer Science & Applications and Centre for AI & Data Sciences.",
+    "content": "The Vice-Chancellor inaugurates TRIVISTA '26 bringing tech talent across South India to compete in AI modeling, coding hackathons, and research paper presentations.",
+    "image_url": "https://ruraluniv.ac.in/images/tdi_gallery/20260729_1.jpg",
+    "is_important": false
+  },
+  {
+    "id": "n3",
+    "title": "MoU Signed with Algorian Software Solutions",
+    "date": "2026-07-27",
+    "category": "Collaboration",
+    "summary": "Strategic partnership between Algorian Software Solutions, Dindigul and Department of Rural Industries & Management.",
+    "content": "The MoU aims to facilitate industrial internships, student placements, and collaborative research in rural enterprise digitalization.",
+    "image_url": "https://ruraluniv.ac.in/images/tdi_gallery/20260729_3.jpg",
+    "is_important": false
+  },
+  {
+    "id": "n4",
+    "title": "38th Convocation Ceremony Celebrated at GRI Campus",
+    "date": "2025-10-05",
+    "category": "Convocation",
+    "summary": "Honoris Causa presented to Sri VVS Laxman, former Indian Cricketer, alongside graduation degrees to over 1200 scholars.",
+    "content": "Chancellor Dr. KM. Annamalai delivered the Convocation Address, highlighting the university's pioneer role in rural higher education and Gandhian values.",
+    "image_url": "https://ruraluniv.ac.in/images/tdi_gallery/20251006_3.jpg",
+    "is_important": true
+  }
+]

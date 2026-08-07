@@ -1,0 +1,42 @@
+[
+  {
+    "id": "dl1",
+    "title": "Prospectus 2026-2027",
+    "category": "Admissions",
+    "file_type": "PDF",
+    "local_path": "assets/documents/Prospectus_2026_27.pdf",
+    "url": "https://www.ruraluniv.ac.in/includes/admissions/2026/pdf/Prospectus_202627.pdf"
+  },
+  {
+    "id": "dl2",
+    "title": "Academic Calendar 2026-2027",
+    "category": "Academic",
+    "file_type": "PDF",
+    "local_path": "assets/documents/Academic_Calendar_2026_2027.pdf",
+    "url": "https://ruraluniv.ac.in/includes/academics/calendar.pdf"
+  },
+  {
+    "id": "dl3",
+    "title": "Application for Transcript",
+    "category": "Examination",
+    "file_type": "PDF",
+    "local_path": "assets/documents/Application_Transcript.pdf",
+    "url": "http://ruraluniv.ac.in/includes/examination/pdf/Application_Transcript.pdf"
+  },
+  {
+    "id": "dl4",
+    "title": "Application for Duplicate Certificates",
+    "category": "Examination",
+    "file_type": "PDF",
+    "local_path": "assets/documents/Application_Duplicate_Certificate.pdf",
+    "url": "http://ruraluniv.ac.in/includes/examination/pdf/DuplicateCertificate.pdf"
+  },
+  {
+    "id": "dl5",
+    "title": "Ph.D. Regulations & Guidelines",
+    "category": "Research",
+    "file_type": "PDF",
+    "local_path": "assets/documents/PhD_Regulations.pdf",
+    "url": "https://ruraluniv.ac.in/includes/admissions/pdf/PhD_Regulations.pdf"
+  }
+]

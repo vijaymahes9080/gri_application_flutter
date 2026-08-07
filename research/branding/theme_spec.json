@@ -1,0 +1,16 @@
+{
+  "university": "The Gandhigram Rural Institute (Deemed to be University)",
+  "website_url": "https://ruraluniv.ac.in/",
+  "extracted_branding": {
+    "primary_color": "#518214",
+    "secondary_color": "#911C03",
+    "accent_color": "#F26B0F",
+    "background_color": "#FDFBF7",
+    "typography": ["Roboto", "Inter", "BaminiTamil"],
+    "components": {
+      "app_bar": "Green topbar with zoom accessibility tools & Samarth portal link",
+      "carousel": "Camera slider with white text captions and gradient fade",
+      "marquee": "Brown scrolling text ticker with hover pause capability"
+    }
+  }
+}

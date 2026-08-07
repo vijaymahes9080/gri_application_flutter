@@ -1,0 +1,24 @@
+{
+  "theme_name": "GRI Material Design 3 Modern Theme",
+  "colors": {
+    "primary_green": "0xFF518214",
+    "primary_green_dark": "0xFF466C09",
+    "secondary_maroon": "0xFF911C03",
+    "secondary_maroon_hover": "0xFFD12905",
+    "accent_terracotta": "0xFFF26B0F",
+    "navy_blue": "0xFF003399",
+    "dark_slate": "0xFF3F4B56",
+    "light_background": "0xFFFDFBF7",
+    "dark_background": "0xFF121417"
+  },
+  "typography": {
+    "font_family": "Inter",
+    "heading_family": "Roboto",
+    "tamil_font": "BaminiTamil"
+  },
+  "border_radius": {
+    "card": 16,
+    "button": 12,
+    "dialog": 24
+  }
+}

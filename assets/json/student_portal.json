@@ -1,0 +1,24 @@
+{
+  "portal_services": [
+    {
+      "title": "Samarth Student Portal",
+      "url": "https://ruraluniv.samarth.ac.in/index.php/site/login",
+      "description": "Access course registration, fee payment, hall tickets, and semester grade sheets."
+    },
+    {
+      "title": "Attendance Monitoring System",
+      "url": "https://attendance.ruraluniv.ac.in/",
+      "description": "Check daily class attendance, condonation eligibility, and faculty log."
+    },
+    {
+      "title": "Ph.D. Research Tracking System",
+      "url": "https://www.ruraluniv.ac.in/GRIIMS1/",
+      "description": "Track doctoral research progress, RAC meetings, thesis submission, and viva status."
+    },
+    {
+      "title": "e-SANAD Document Verification",
+      "url": "https://www.portal.ruraluniv.ac.in/esanad",
+      "description": "Online contactless verification of academic certificates with MEA."
+    }
+  ]
+}

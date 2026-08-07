@@ -1,0 +1,30 @@
+{
+  "university_name": "The Gandhigram Rural Institute (Deemed to be University)",
+  "address": "Gandhigram, Dindigul District, Tamil Nadu, India - 624 302",
+  "phone": "+91 451 2452371 to 2452375",
+  "fax": "+91 451 2454466",
+  "email": "gru@ruraluniv.ac.in",
+  "webmail": "https://webmail.ruraluniv.ac.in/",
+  "key_officials": [
+    {
+      "designation": "Chancellor",
+      "name": "Dr. KM. Annamalai",
+      "email": "chancellor@ruraluniv.ac.in"
+    },
+    {
+      "designation": "Vice-Chancellor",
+      "name": "Dr. N. Panchanatham",
+      "email": "vc@ruraluniv.ac.in"
+    },
+    {
+      "designation": "Registrar i/c",
+      "name": "Dr. M. Sundaramari",
+      "email": "registrar@ruraluniv.ac.in"
+    },
+    {
+      "designation": "Controller of Examinations",
+      "name": "Office of COE",
+      "email": "coe@ruraluniv.ac.in"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "d1",
+    "school_id": "s2",
+    "name": "Department of Computer Science & Applications",
+    "code": "DCSA",
+    "hod": "Prof. S. Arumugam",
+    "programmes": ["MCA", "M.Sc. Computer Science", "Ph.D. Computer Science"],
+    "research_areas": ["Artificial Intelligence", "Data Science", "Computer Vision", "IoT"]
+  },
+  {
+    "id": "d2",
+    "school_id": "s2",
+    "name": "Department of Mathematics",
+    "code": "MATH",
+    "hod": "Prof. P. Balasubramaniam",
+    "programmes": ["B.Sc. Mathematics", "M.Sc. Mathematics", "Ph.D. Mathematics"],
+    "research_areas": ["Control Theory", "Neural Networks", "Differential Equations", "Fuzzy Systems"]
+  },
+  {
+    "id": "d3",
+    "school_id": "s2",
+    "name": "Department of Chemistry",
+    "code": "CHEM",
+    "hod": "Prof. K. Anbalagan",
+    "programmes": ["B.Sc. Chemistry", "M.Sc. Chemistry", "Ph.D. Chemistry"],
+    "research_areas": ["NMR Spectroscopy", "Electrochemistry", "Synthetic Chemistry", "Polymer Chemistry"]
+  },
+  {
+    "id": "d4",
+    "school_id": "s1",
+    "name": "Department of Agriculture",
+    "code": "AGRI",
+    "hod": "Prof. T. Senthil Kumar",
+    "programmes": ["B.Sc. (Hons.) Agriculture", "M.Sc. Agronomy", "Ph.D. Agriculture"],
+    "research_areas": ["Sustainable Agriculture", "Organic Farming", "Crop Physiology", "Soil Science"]
+  },
+  {
+    "id": "d5",
+    "school_id": "s6",
+    "name": "Department of Rural Industries and Management",
+    "code": "DRIM",
+    "hod": "Prof. M. Soundarapandian",
+    "programmes": ["MBA (Small Business & Rural Entrepreneurship)", "Ph.D. Management"],
+    "research_areas": ["Rural Micro-enterprises", "Cooperatives", "Supply Chain Management"]
+  },
+  {
+    "id": "d6",
+    "school_id": "s4",
+    "name": "Department of Gandhian Thought and Peace Science",
+    "code": "GTPS",
+    "hod": "Prof. A. Joseph",
+    "programmes": ["M.A. Gandhian Thought & Peace Science", "Ph.D. Peace Studies"],
+    "research_areas": ["Gandhian Philosophy", "Non-violence", "Conflict Resolution", "Rural Upliftment"]
+  },
+  {
+    "id": "d7",
+    "school_id": "s5",
+    "name": "Department of Rural Health and Sanitation",
+    "code": "DRHS",
+    "hod": "Prof. K. S. Pushpa",
+    "programmes": ["Post Graduate Diploma in Sanitary Inspector's Course", "M.Sc. Public Health"],
+    "research_areas": ["Community Health", "Water Quality & Sanitation", "Hygiene & Epidemiology"]
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "academic_year": "2026-2027",
+  "prospectus_url": "https://www.ruraluniv.ac.in/includes/admissions/2026/pdf/Prospectus_202627.pdf",
+  "key_dates": [
+    {"event": "CUET UG / PG Online Registration", "date": "Open Now"},
+    {"event": "Ph.D. Application July 2026 Deadline", "date": "August 10, 2026"},
+    {"event": "Classes Commencement for UG 1st Year", "date": "August 20, 2026"}
+  ],
+  "categories": [
+    {
+      "name": "Undergraduate Programmes (UG)",
+      "items": ["B.Sc. (Hons.) Agriculture", "B.Sc. Mathematics", "B.Sc. Chemistry", "B.Sc. Physics", "B.A. Gandhian Social Work", "B.Voc. Farm Food Processing"]
+    },
+    {
+      "name": "Postgraduate Programmes (PG)",
+      "items": ["MCA (Master of Computer Applications)", "M.Sc. Mathematics", "M.Sc. Chemistry", "M.Sc. Biology", "M.A. Peace Science", "MBA Rural Management"]
+    },
+    {
+      "name": "Research & Ph.D.",
+      "items": ["Ph.D. Full-Time / Part-Time Regulations", "M.Phil Regulations", "D.Sc. and D.Litt. Regulations"]
+    }
+  ],
+  "fee_structure": {
+    "hostel_fee_details": "Hostel rent and mess deposit details available in official PDF",
+    "fee_refund_policy": "Strict adherence to UGC guidelines for refund of fee on cancellation of admission"
+  }
+}

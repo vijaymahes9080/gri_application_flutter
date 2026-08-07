@@ -1,0 +1,62 @@
+[
+  {
+    "id": "doc1",
+    "title": "Prospectus 2026-2027",
+    "category": "Admissions",
+    "file_type": "PDF",
+    "file_size": "4.2 MB",
+    "local_path": "assets/documents/Prospectus_2026_27.pdf",
+    "remote_url": "https://www.ruraluniv.ac.in/includes/admissions/2026/pdf/Prospectus_202627.pdf",
+    "description": "Official university prospectus covering UG, PG, Diploma, and Ph.D. admissions."
+  },
+  {
+    "id": "doc2",
+    "title": "Academic Calendar 2026-2027",
+    "category": "Academic",
+    "file_type": "PDF",
+    "file_size": "1.8 MB",
+    "local_path": "assets/documents/Academic_Calendar_2026_2027.pdf",
+    "remote_url": "https://ruraluniv.ac.in/includes/academics/calendar.pdf",
+    "description": "Complete semester schedules, examination dates, and university holidays."
+  },
+  {
+    "id": "doc3",
+    "title": "Application for Transcript",
+    "category": "Examination",
+    "file_type": "PDF",
+    "file_size": "520 KB",
+    "local_path": "assets/documents/Application_Transcript.pdf",
+    "remote_url": "http://ruraluniv.ac.in/includes/examination/pdf/Application_Transcript.pdf",
+    "description": "Official application form for official transcript issuance by Controller of Examinations."
+  },
+  {
+    "id": "doc4",
+    "title": "Application for Duplicate Certificates",
+    "category": "Examination",
+    "file_type": "PDF",
+    "file_size": "480 KB",
+    "local_path": "assets/documents/Application_Duplicate_Certificate.pdf",
+    "remote_url": "http://ruraluniv.ac.in/includes/examination/pdf/DuplicateCertificate.pdf",
+    "description": "Form for requesting replacement/duplicate degree or mark sheets."
+  },
+  {
+    "id": "doc5",
+    "title": "Ph.D. Regulations & Guidelines",
+    "category": "Research",
+    "file_type": "PDF",
+    "file_size": "2.1 MB",
+    "local_path": "assets/documents/PhD_Regulations.pdf",
+    "remote_url": "https://ruraluniv.ac.in/includes/admissions/pdf/PhD_Regulations.pdf",
+    "description": "Comprehensive guidelines for Ph.D. course work, RAC meetings, thesis submission, and viva."
+  },
+  {
+    "id": "doc6",
+    "title": "GRI University Institutional Brochure",
+    "category": "General",
+    "file_type": "PDF",
+    "file_size": "5.5 MB",
+    "local_path": "assets/documents/GRI_University_Brochure.pdf",
+    "remote_url": "https://ruraluniv.ac.in/includes/aboutgri/brochure.pdf",
+    "description": "Overview of GRI history, NAAC A accreditation, schools, and Gandhian constructive programs."
+  }
+]

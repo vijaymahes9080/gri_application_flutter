@@ -1,0 +1,86 @@
+{
+  "key_officials": [
+    {
+      "role": "Chancellor",
+      "name": "Dr. KM. Annamalai",
+      "qualification": "Ph.D.",
+      "email": "chancellor@ruraluniv.ac.in",
+      "phone": "+91 451 2452371"
+    },
+    {
+      "role": "Vice-Chancellor",
+      "name": "Dr. N. Panchanatham",
+      "qualification": "Ph.D., FNAAS",
+      "email": "vc@ruraluniv.ac.in",
+      "phone": "+91 451 2452323"
+    },
+    {
+      "role": "Registrar i/c",
+      "name": "Dr. M. Sundaramari",
+      "qualification": "Ph.D.",
+      "email": "registrar@ruraluniv.ac.in",
+      "phone": "+91 451 2452371"
+    },
+    {
+      "role": "Controller of Examinations",
+      "name": "Dr. S. Arumugam",
+      "qualification": "Ph.D.",
+      "email": "coe@ruraluniv.ac.in",
+      "phone": "+91 451 2452329"
+    },
+    {
+      "role": "Finance Officer i/c",
+      "name": "Sri. K. Ramesh",
+      "qualification": "M.Com., FCMA",
+      "email": "fo@ruraluniv.ac.in",
+      "phone": "+91 451 2452331"
+    },
+    {
+      "role": "Chief Vigilance Officer",
+      "name": "Dr. P. Balasubramaniam",
+      "qualification": "Ph.D.",
+      "email": "cvo@ruraluniv.ac.in",
+      "phone": "+91 451 2452372"
+    }
+  ],
+  "governance_bodies": [
+    {
+      "body_name": "Board of Management (BOM)",
+      "description": "Principal executive body responsible for general superintendence, direction, and control of university affairs.",
+      "composition": [
+        "Vice-Chancellor (Chairperson)",
+        "Deans of Schools",
+        "UGC Nominees",
+        "Ministry of Education Representatives",
+        "Senior Professors & Industry Experts"
+      ]
+    },
+    {
+      "body_name": "Academic Council",
+      "description": "Principal academic body deciding academic policy, curriculum design, degree approvals, and research standards.",
+      "composition": [
+        "Vice-Chancellor (Chairperson)",
+        "All Deans & Heads of Departments",
+        "External Academic Experts",
+        "Student Representatives"
+      ]
+    },
+    {
+      "body_name": "Planning and Monitoring Board",
+      "description": "Oversees long-term institutional expansion, NEP 2020 alignment, infra development, and UGC grants utilization."
+    },
+    {
+      "body_name": "Finance Committee",
+      "description": "Advises on budget allocation, annual audited accounts, fee structures, and capital expenditure."
+    }
+  ],
+  "deans_of_schools": [
+    {"school": "School of Agriculture & Animal Sciences", "dean": "Dr. S. Ramesh"},
+    {"school": "School of Sciences", "dean": "Dr. P. Balasubramaniam"},
+    {"school": "School of Tamil, Indian Languages & Fine Arts", "dean": "Dr. K. Murugesan"},
+    {"school": "School of Social Sciences", "dean": "Dr. M. Sundaramari"},
+    {"school": "School of Health Sciences & Rural Development", "dean": "Dr. R. Seerangarajan"},
+    {"school": "School of Management Studies", "dean": "Dr. M. Soundarapandian"},
+    {"school": "School of Education & Lifelong Learning", "dean": "Dr. G. Pankajam"}
+  ]
+}

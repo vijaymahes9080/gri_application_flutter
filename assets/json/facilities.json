@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fac1",
+    "name": "Dr. G. Ramachandran Central Library",
+    "description": "Housing over 1,50,000 volumes, e-journals, digital repository, INFLIBNET access, and rare Gandhian collection."
+  },
+  {
+    "id": "fac2",
+    "name": "Computer Centre",
+    "description": "High-speed optical fiber backbone connecting all departments, server infrastructure, and student computer labs."
+  },
+  {
+    "id": "fac3",
+    "name": "Central Instrumentation Centre",
+    "description": "State-of-the-art NMR 400 MHz, Powder XRD, FE-SEM, UV-Vis Spectrophotometer supporting advanced scientific research."
+  },
+  {
+    "id": "fac4",
+    "name": "UBA Seaweed Startup Facility",
+    "description": "Unnat Bharat Abhiyan initiative developing marine bio-refineries and rural seaweed cultivation enterprise models."
+  },
+  {
+    "id": "fac5",
+    "name": "Physical Education & Yoga Centre",
+    "description": "Sports grounds, indoor gymnasium, yoga pavilion, and national-level track and field infrastructure."
+  },
+  {
+    "id": "fac6",
+    "name": "Museum of Constructive Programme",
+    "description": "Showcasing Gandhian constructive programs, village sanitation models, and rural heritage artifacts."
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "year": "2026",
+    "title": "GRI e-News Edition 2026",
+    "bulletins": [
+      {
+        "issue": "Volume 24, Issue 1 (January - June 2026)",
+        "highlights": "38th Convocation ceremony, Launch of Seaweed Bio-Refinery startup facility, CRISPR Expert Colloquium, TRIVISTA '26 National Tech Symposium, MoU with Algorian Software Solutions.",
+        "pdf_url": "https://www.ruraluniv.ac.in/includes/enews/2k26/jan_jun_2026.pdf"
+      }
+    ]
+  },
+  {
+    "year": "2025",
+    "title": "GRI e-News Edition 2025",
+    "bulletins": [
+      {
+        "issue": "Volume 23, Issue 2 (July - December 2025)",
+        "highlights": "National Seminar on Gandhian Economy, MoE Infrastructure Grant approval, Sports Meet achievements.",
+        "pdf_url": "https://www.ruraluniv.ac.in/includes/enews/2k25/jul_dec_2025.pdf"
+      },
+      {
+        "issue": "Volume 23, Issue 1 (January - June 2025)",
+        "highlights": "Unnat Bharat Abhiyan village adoption initiative, Research publications in high impact journals.",
+        "pdf_url": "https://www.ruraluniv.ac.in/includes/enews/2k25/jan_jun_2025.pdf"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "title": "GRI e-News Edition 2024",
+    "bulletins": [
+      {
+        "issue": "Volume 22, Annual Issue (2024)",
+        "highlights": "Implementation of NEP 2020 4-year Honours Curriculum, NAAC reaccreditation preparation, Alumni meet.",
+        "pdf_url": "https://www.ruraluniv.ac.in/includes/enews/2k24/annual_2024.pdf"
+      }
+    ]
+  },
+  {
+    "year": "2023 - 2015 Archive",
+    "title": "Historical e-News Archives (2015-2023)",
+    "bulletins": [
+      {"issue": "2023 Annual Edition", "pdf_url": "https://www.ruraluniv.ac.in/includes/enews/2k23/2023.pdf"},
+      {"issue": "2022 Annual Edition", "pdf_url": "https://www.ruraluniv.ac.in/includes/enews/2k22/2022.pdf"},
+      {"issue": "2021 Annual Edition", "pdf_url": "https://www.ruraluniv.ac.in/includes/enews/2k21/2021.pdf"},
+      {"issue": "2020 Annual Edition", "pdf_url": "http://ruraluniv.ac.in/includes/enews/2k20/2020.pdf"},
+      {"issue": "2019 Annual Edition", "pdf_url": "http://ruraluniv.ac.in/includes/enews/2k19/2019.pdf"},
+      {"issue": "2018 Annual Edition", "pdf_url": "http://ruraluniv.ac.in/includes/enews/2k18/2018.pdf"},
+      {"issue": "2017 Annual Edition", "pdf_url": "http://ruraluniv.ac.in/includes/enews/2017/2017.pdf"},
+      {"issue": "2015-16 Foundation Edition", "pdf_url": "http://ruraluniv.ac.in/includes/enews/startpage/foundation.pdf"}
+    ]
+  }
+]
