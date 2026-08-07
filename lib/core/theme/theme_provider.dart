@@ -3,6 +3,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemeProvider extends ChangeNotifier {
   static const String _themePrefKey = 'is_dark_mode';
+  static const String _zoomPrefKey = 'text_scale_factor';
+
   bool _isDarkMode = false;
   double _textScaleFactor = 1.0;
 
@@ -10,12 +12,13 @@ class ThemeProvider extends ChangeNotifier {
   double get textScaleFactor => _textScaleFactor;
 
   ThemeProvider() {
-    _loadThemePreference();
+    _loadPreferences();
   }
 
-  void _loadThemePreference() async {
+  Future<void> _loadPreferences() async {
     final prefs = await SharedPreferences.getInstance();
     _isDarkMode = prefs.getBool(_themePrefKey) ?? false;
+    _textScaleFactor = prefs.getDouble(_zoomPrefKey) ?? 1.0;
     notifyListeners();
   }
 
@@ -26,22 +29,28 @@ class ThemeProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void zoomInText() {
+  void zoomInText() async {
     if (_textScaleFactor < 1.4) {
       _textScaleFactor += 0.1;
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setDouble(_zoomPrefKey, _textScaleFactor);
       notifyListeners();
     }
   }
 
-  void zoomOutText() {
+  void zoomOutText() async {
     if (_textScaleFactor > 0.8) {
       _textScaleFactor -= 0.1;
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setDouble(_zoomPrefKey, _textScaleFactor);
       notifyListeners();
     }
   }
 
-  void resetTextZoom() {
+  void resetTextZoom() async {
     _textScaleFactor = 1.0;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setDouble(_zoomPrefKey, _textScaleFactor);
     notifyListeners();
   }
 }
