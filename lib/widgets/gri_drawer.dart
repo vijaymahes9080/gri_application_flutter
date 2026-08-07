@@ -50,6 +50,22 @@ class GriDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: const Icon(Icons.info_outline, color: AppColors.accentTerracotta),
+            title: const Text('About GRI'),
+            onTap: () {
+              Navigator.pop(context);
+              context.go('/about');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.gavel_outlined, color: AppColors.navyBlue),
+            title: const Text('Governance & Administration'),
+            onTap: () {
+              Navigator.pop(context);
+              context.go('/governance');
+            },
+          ),
+          ListTile(
             leading: const Icon(Icons.account_balance_outlined, color: AppColors.secondaryMaroon),
             title: const Text('Schools & Faculties'),
             onTap: () {
@@ -74,6 +90,30 @@ class GriDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: const Icon(Icons.location_city_outlined, color: AppColors.primaryGreen),
+            title: const Text('Facilities & Infrastructure'),
+            onTap: () {
+              Navigator.pop(context);
+              context.go('/facilities');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.newspaper_outlined, color: AppColors.secondaryMaroon),
+            title: const Text('e-News Archives'),
+            onTap: () {
+              Navigator.pop(context);
+              context.go('/enews');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.video_library_outlined, color: Colors.purple),
+            title: const Text('Video Gallery'),
+            onTap: () {
+              Navigator.pop(context);
+              context.go('/videos');
+            },
+          ),
+          ListTile(
             leading: const Icon(Icons.download_outlined, color: AppColors.slateHeader),
             title: const Text('Downloads & Forms'),
             onTap: () {
@@ -87,6 +127,14 @@ class GriDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               context.go('/portal');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.contact_phone_outlined, color: AppColors.accentTerracotta),
+            title: const Text('Contacts & Helpline'),
+            onTap: () {
+              Navigator.pop(context);
+              context.go('/contacts');
             },
           ),
           const Divider(),
