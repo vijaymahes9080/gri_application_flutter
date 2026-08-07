@@ -1,29 +1,6 @@
 package ac.ruraluniv.gri
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.ui.Modifier
-import androidx.navigation.compose.rememberNavController
-import ac.ruraluniv.gri.navigation.SetupNavGraph
-import ac.ruraluniv.gri.ui.theme.GriTheme
+import io.flutter.embedding.android.FlutterActivity
 
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            GriTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    val navController = rememberNavController()
-                    SetupNavGraph(navController = navController)
-                }
-            }
-        }
-    }
+class MainActivity: FlutterActivity() {
 }
