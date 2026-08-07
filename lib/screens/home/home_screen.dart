@@ -50,6 +50,39 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  void _showAnnouncementsDialog(BuildContext context, List<dynamic> announcements) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        title: Row(
+          children: const [
+            Icon(Icons.campaign, color: AppColors.accentTerracotta),
+            SizedBox(width: 8),
+            Text('Marquee Announcements', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: announcements
+              .map((announcement) => ListTile(
+                    dense: true,
+                    contentPadding: EdgeInsets.zero,
+                    leading: const Icon(Icons.new_releases_outlined, color: AppColors.primaryGreen, size: 18),
+                    title: Text(announcement.toString(), style: const TextStyle(fontSize: 13)),
+                  ))
+              .toList(),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Close', style: TextStyle(color: AppColors.primaryGreen, fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final homeProvider = Provider.of<HomeProvider>(context);
@@ -71,44 +104,50 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Column(
                     children: [
                       // Announcement Marquee Ticker
-                      Container(
-                        width: double.infinity,
-                        color: AppColors.secondaryMaroon,
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                        child: Row(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                              decoration: BoxDecoration(
-                                color: AppColors.accentTerracotta,
-                                borderRadius: BorderRadius.circular(4),
-                              ),
-                              child: const Text(
-                                'ANNOUNCEMENTS',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.bold,
+                      InkWell(
+                        onTap: () {
+                          final announcements = homeProvider.homeData['marquee_announcements'] as List<dynamic>? ?? [];
+                          _showAnnouncementsDialog(context, announcements);
+                        },
+                        child: Container(
+                          width: double.infinity,
+                          color: AppColors.secondaryMaroon,
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          child: Row(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: AppColors.accentTerracotta,
+                                  borderRadius: BorderRadius.circular(4),
                                 ),
-                              ),
-                            ),
-                            const SizedBox(width: 8),
-                            Expanded(
-                              child: SingleChildScrollView(
-                                scrollDirection: Axis.horizontal,
-                                child: Text(
-                                  (homeProvider.homeData['marquee_announcements'] as List<dynamic>?)
-                                          ?.join('   •   ') ??
-                                      'CUET UG/PG Admissions 2026-2027 Portal is live now',
-                                  style: const TextStyle(
+                                child: const Text(
+                                  'ANNOUNCEMENTS',
+                                  style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w500,
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
+                              const SizedBox(width: 8),
+                              Expanded(
+                                child: SingleChildScrollView(
+                                  scrollDirection: Axis.horizontal,
+                                  child: Text(
+                                    (homeProvider.homeData['marquee_announcements'] as List<dynamic>?)
+                                            ?.join('   •   ') ??
+                                        'CUET UG/PG Admissions 2026-2027 Portal is live now',
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       const SizedBox(height: 12),
@@ -123,7 +162,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16.0),
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAlignment.start,
                           children: [
                             const SectionHeader(
                               title: 'Quick Access Portal',
@@ -163,7 +202,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             SectionHeader(
                               title: 'Latest News & Colloquium',
                               subtitle: 'Recent updates from departments & administration',
-                              onSeeAll: () => context.go('/schools'),
+                              onSeeAll: () => context.push('/enews'),
                             ),
                             ...homeProvider.newsList.map((news) => NewsCard(news: news)),
                           ],
@@ -179,7 +218,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             SectionHeader(
                               title: 'Upcoming Academic Events',
                               subtitle: 'Examinations, colloquiums & workshops',
-                              onSeeAll: () => context.go('/admissions'),
+                              onSeeAll: () => context.push('/admissions'),
                             ),
                             ...homeProvider.eventList.map((event) => EventCard(event: event)),
                           ],
@@ -256,16 +295,16 @@ class _HomeScreenState extends State<HomeScreen> {
             });
             switch (index) {
               case 0:
-                context.go('/home');
+                context.push('/home');
                 break;
               case 1:
-                context.go('/schools');
+                context.push('/schools');
                 break;
               case 2:
-                context.go('/admissions');
+                context.push('/admissions');
                 break;
               case 3:
-                context.go('/portal');
+                context.push('/portal');
                 break;
             }
           },

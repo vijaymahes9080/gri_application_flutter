@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../core/constants/app_colors.dart';
+import '../../core/utils/url_helper.dart';
 import '../../providers/home_provider.dart';
 import '../../widgets/gri_app_bar.dart';
 
@@ -19,9 +20,12 @@ class DownloadsScreen extends StatelessWidget {
         itemCount: downloads.length,
         itemBuilder: (context, index) {
           final item = downloads[index];
+          final url = item['url'] ?? item['remote_url'] ?? item['local_path'] ?? '';
+
           return Card(
             margin: const EdgeInsets.only(bottom: 10),
             child: ListTile(
+              onTap: () => UrlHelper.openUrl(context, url),
               leading: Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
@@ -40,11 +44,7 @@ class DownloadsScreen extends StatelessWidget {
               ),
               trailing: IconButton(
                 icon: const Icon(Icons.download, color: AppColors.primaryGreen),
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Downloading ${item['title']}...')),
-                  );
-                },
+                onPressed: () => UrlHelper.openUrl(context, url),
               ),
             ),
           );

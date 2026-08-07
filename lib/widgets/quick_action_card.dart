@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import '../core/config/app_config.dart';
+import '../core/utils/url_helper.dart';
 
 class QuickActionCard extends StatelessWidget {
   final String title;
@@ -17,18 +19,36 @@ class QuickActionCard extends StatelessWidget {
     required this.route,
   });
 
+  void _handleTap(BuildContext context) {
+    if (route.startsWith('http://') || route.startsWith('https://')) {
+      UrlHelper.openUrl(context, route);
+    } else if (title.contains('Samarth')) {
+      UrlHelper.openUrl(context, AppConfig.samarthPortalUrl);
+    } else if (title.contains('e-SANAD')) {
+      UrlHelper.openUrl(context, AppConfig.esanadPortalUrl);
+    } else if (title.contains('Ph.D')) {
+      UrlHelper.openUrl(context, AppConfig.phdTrackingPortalUrl);
+    } else {
+      try {
+        context.push(route);
+      } catch (_) {
+        context.go(route);
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Card(
       elevation: 2,
       child: InkWell(
         borderRadius: BorderRadius.circular(16),
-        onTap: () => context.go(route),
+        onTap: () => _handleTap(context),
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAlignment.start,
             children: [
               Container(
                 padding: const EdgeInsets.all(8),
