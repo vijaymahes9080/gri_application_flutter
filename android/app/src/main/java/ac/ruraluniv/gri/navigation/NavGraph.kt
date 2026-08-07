@@ -20,7 +20,7 @@ fun SetupNavGraph(navController: NavHostController) {
         composable(route = Screen.Splash.route) {
             SplashScreen(
                 onNavigateToLogin = {
-                    navController.navigate(Screen.Login.route) {
+                    navController.navigate(Screen.Home.route) {
                         popUpTo(Screen.Splash.route) { inclusive = true }
                     }
                 },
@@ -69,7 +69,21 @@ fun SetupNavGraph(navController: NavHostController) {
                     navController.navigate(Screen.Menu.route)
                 },
                 onQuickActionClick = { route ->
-                    navController.navigate(route)
+                    val targetRoute = when (route) {
+                        "/admissions", "admissions" -> Screen.Admissions.route
+                        "/schools", "schools" -> Screen.Schools.route
+                        "/departments", "departments" -> Screen.Departments.route
+                        "/portal", "portal" -> Screen.Portal.route
+                        "/downloads", "downloads" -> Screen.Downloads.route
+                        "/facilities", "facilities" -> Screen.Facilities.route
+                        "/enews", "enews" -> Screen.ENews.route
+                        "/videos", "videos" -> Screen.Videos.route
+                        "/about", "about" -> Screen.About.route
+                        "/governance", "governance" -> Screen.Governance.route
+                        "/contacts", "contacts" -> Screen.Contacts.route
+                        else -> Screen.Home.route
+                    }
+                    navController.navigate(targetRoute)
                 }
             )
         }
@@ -83,8 +97,23 @@ fun SetupNavGraph(navController: NavHostController) {
                     navController.navigate(Screen.Login.route) {
                         popUpTo(0) { inclusive = true }
                     }
+                },
+                onNavigate = { route ->
+                    navController.navigate(route)
                 }
             )
         }
+
+        composable(route = Screen.About.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        composable(route = Screen.Governance.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        composable(route = Screen.Schools.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        composable(route = Screen.Departments.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        composable(route = Screen.Admissions.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        composable(route = Screen.Facilities.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        composable(route = Screen.ENews.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        composable(route = Screen.Videos.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        composable(route = Screen.Downloads.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        composable(route = Screen.Portal.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
+        composable(route = Screen.Contacts.route) { HomeScreen(onOpenMenu = { navController.navigate(Screen.Menu.route) }, onQuickActionClick = { navController.navigate(it) }) }
     }
 }

@@ -24,10 +24,9 @@ import ac.ruraluniv.gri.ui.theme.GriPrimary
 fun MenuScreen(
     onCloseMenu: () -> Unit,
     onLogout: () -> Unit,
+    onNavigate: (String) -> Unit = {},
     viewModel: MenuViewModel = viewModel()
 ) {
-    val schools by viewModel.schools.collectAsState()
-
     Scaffold(
         topBar = {
             TopAppBar(
@@ -95,30 +94,30 @@ fun MenuScreen(
 
             // Main Menu List Sections
             MenuGroupHeader("INSTITUTIONAL")
-            MenuItemRow(Icons.Default.Info, "About GRI", "Vision, Mission, History, Logo")
-            MenuItemRow(Icons.Default.Gavel, "Governance", "Board of Management, Academic Council")
-            MenuItemRow(Icons.Default.AdminPanelSettings, "Administration", "Chancellor, Vice-Chancellor, Registrar")
+            MenuItemRow(Icons.Default.Info, "About GRI", "Vision, Mission, History, Logo") { onNavigate("about") }
+            MenuItemRow(Icons.Default.Gavel, "Governance", "Board of Management, Academic Council") { onNavigate("governance") }
+            MenuItemRow(Icons.Default.AdminPanelSettings, "Administration", "Chancellor, Vice-Chancellor, Registrar") { onNavigate("contacts") }
 
             HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
 
             MenuGroupHeader("ACADEMICS & ADMISSIONS")
-            MenuItemRow(Icons.Default.School, "Schools & Departments", "Sciences, Social Sciences, Agriculture")
-            MenuItemRow(Icons.Default.AppRegistration, "Admissions 2026-27", "Prospectus, CUET, Ph.D Application")
-            MenuItemRow(Icons.Default.Assignment, "Examinations", "Time Table, Results, e-SANAD")
-            MenuItemRow(Icons.Default.Science, "Research & Development", "RDC Cell, Projects, Publications")
+            MenuItemRow(Icons.Default.School, "Schools & Departments", "Sciences, Social Sciences, Agriculture") { onNavigate("schools") }
+            MenuItemRow(Icons.Default.AppRegistration, "Admissions 2026-27", "Prospectus, CUET, Ph.D Application") { onNavigate("admissions") }
+            MenuItemRow(Icons.Default.Assignment, "Examinations", "Time Table, Results, e-SANAD") { onNavigate("portal") }
+            MenuItemRow(Icons.Default.Science, "Research & Development", "RDC Cell, Projects, Publications") { onNavigate("facilities") }
 
             HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
 
             MenuGroupHeader("FACILITIES & INFRASTRUCTURE")
-            MenuItemRow(Icons.Default.LocalLibrary, "Central Library", "Books, E-Resources, Journals")
-            MenuItemRow(Icons.Default.Hotel, "Hostel Facilities", "Men's, Women's, Working Women's Hostel")
-            MenuItemRow(Icons.Default.MedicalServices, "Health Centre & Canteen", "Medical, Amenities, Bank")
+            MenuItemRow(Icons.Default.LocalLibrary, "Central Library", "Books, E-Resources, Journals") { onNavigate("facilities") }
+            MenuItemRow(Icons.Default.Hotel, "Hostel Facilities", "Men's, Women's, Working Women's Hostel") { onNavigate("facilities") }
+            MenuItemRow(Icons.Default.MedicalServices, "Health Centre & Canteen", "Medical, Amenities, Bank") { onNavigate("facilities") }
 
             HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
 
             MenuGroupHeader("SYSTEM & PORTAL")
-            MenuItemRow(Icons.Default.Download, "Downloads & Circulars", "Forms, Handbooks, Notifications")
-            MenuItemRow(Icons.Default.Settings, "Settings & Preferences", "Dark Theme, Language, Text Size")
+            MenuItemRow(Icons.Default.Download, "Downloads & Circulars", "Forms, Handbooks, Notifications") { onNavigate("downloads") }
+            MenuItemRow(Icons.Default.Settings, "Settings & Preferences", "Dark Theme, Language, Text Size") { onNavigate("settings") }
             MenuItemRow(Icons.Default.ExitToApp, "Logout", "Sign out of Student Portal", textColor = MaterialTheme.colorScheme.error) {
                 onLogout()
             }
